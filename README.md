@@ -27,8 +27,9 @@ Contiene toda la lógica del programa:
 
 El ejecutable se llama `philo_bonus`. Se ejecuta de la siguiente forma:
 
+```c
 ./philo_bonus number_of_philosophers time_to_die time_to_eat time_to_sleep [must_eat_times]
-
+```
 
 - `number_of_philosophers`: Número de filósofos a simular.
 - `time_to_die`: Tiempo en milisegundos antes de que un filósofo muera si no ha comido.
@@ -66,7 +67,10 @@ Se imprime en pantalla el estado de cada filósofo con marcas de tiempo relativa
 ---
 
 ## Ejemplo de Ejecución
+
+```c
 ./philo_bonus 5 800 200 200
+```
 
 Esto simula 5 filósofos donde:
 - Cada filósofo muere si no come en 800ms.
@@ -75,6 +79,8 @@ Esto simula 5 filósofos donde:
 - La simulación termina si un filósofo muere.
 
 Salida típica:
+
+```c
 0 1 is thinking
 0 2 is thinking
 5 1 has taken a fork
@@ -82,7 +88,7 @@ Salida típica:
 5 1 is eating
 ...
 800 3 died
-
+```
 ---
 
 ## Librerías y Dependencias
